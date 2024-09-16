@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.logo{
+    width: 10%;
+}
+
+.profile{
+    width: 5%;
+}
+
+
+@media (max-width:900px) {
+    .logo{
+        width: 30%;
+    }
+
+    .profile{
+        width: 20%;
+    }
+    
+}
