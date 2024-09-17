@@ -8,8 +8,8 @@ const AdminLogin = () => {
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
     const [generalError, setGeneralError] = useState('');
-    const [isLoggedIn, setIsLoggedIn] = useState(false); // New state for login status
-    const [welcomeMessage, setWelcomeMessage] = useState(''); // Optional state for welcome message
+    const [isLoggedIn, setIsLoggedIn] = useState(false); 
+    const [welcomeMessage, setWelcomeMessage] = useState(''); 
 
     const handleLogin = async (event) => {
         event.preventDefault();
@@ -25,8 +25,8 @@ const AdminLogin = () => {
             const { success, message } = response.data;
             
             if (success) {
-                setIsLoggedIn(true); // Set login status to true
-                setWelcomeMessage('Welcome, Admin!'); // Optional: Set welcome message
+                setIsLoggedIn(true); 
+                setWelcomeMessage('Welcome, Admin!'); 
             } else {
                 setGeneralError(message || 'Login failed. Please try again.');
             }
@@ -39,13 +39,13 @@ const AdminLogin = () => {
     return (
         <div className="login-container">
             {isLoggedIn ? (
-                // Display this if the login is successful
+                
                 <div className="welcome-message">
                     <h2>{welcomeMessage}</h2>
                     <p>You have successfully logged in!</p>
                 </div>
             ) : (
-                // Display login form if not logged in
+               
                 <form onSubmit={handleLogin}>
                     <label htmlFor="email">E-mail</label>
                     <input

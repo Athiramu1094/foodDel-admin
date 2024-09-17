@@ -39,8 +39,8 @@ const EditRestaurant = () => {
         try {
           const response = await axios.get(`${restaurantUrl}/${id}`);
           console.log("Fetched restaurant data:", response.data);
-          setData(response.data.data); // Update state with fetched data
-          setRestaurantImage(response.data.data.image); // Update image if needed
+          setData(response.data.data); 
+          setRestaurantImage(response.data.data.image); 
         } catch (error) {
           console.error("Error fetching restaurant:", error);
         }

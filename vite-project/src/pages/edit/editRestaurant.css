@@ -13,10 +13,10 @@ ul {
   list-style-type: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; /* Allows the cards to wrap to the next row */
-  gap: 20px; /* Space between cards */
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-   /* Center the cards */
+  
 }
 
 li {
@@ -24,13 +24,13 @@ li {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  flex: 1 1 calc(33.333% - 20px); /* 3 cards in a row with space between */
-  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  flex: 1 1 calc(33.333% - 20px); 
+  box-sizing: border-box; 
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  align-items: center; /* Center content horizontally */
-  text-align: center; /* Center text inside the card */
+  align-items: center;
+  text-align: center; 
 }
 
 li img {

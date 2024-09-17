@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-import FoodList from "../../components/foodList"; // Import FoodList component
+import FoodList from "../../components/foodList"; 
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./editFood.css";
 
 const FoodEdit = () => {
-  const { id } = useParams(); // Get the food item ID from the URL
+  const { id } = useParams(); 
   const navigate = useNavigate();
   const [foodItem, setFoodItem] = useState(null);
-  const [foods, setFoods] = useState([]); // State to store all foods
-  const [restaurants, setRestaurants] = useState([]); // State to store restaurant data
+  const [foods, setFoods] = useState([]); 
+  const [restaurants, setRestaurants] = useState([]);
   const [mainImageFile, setMainImageFile] = useState(null);
   const [mainImagePreview, setMainImagePreview] = useState(null);
   const [imageFile, setImageFile] = useState(null);
@@ -106,7 +106,7 @@ const FoodEdit = () => {
         headers: { "Content-Type": "multipart/form-data" },
       });
       toast.success(response.data.message);
-      navigate('/'); // Redirect to the list page
+      navigate('/'); 
     } catch (error) {
       console.error("Error updating food item:", error);
       toast.error("Error updating food item!");
@@ -174,7 +174,7 @@ const FoodEdit = () => {
               <option value="Salads">Salads</option>
               <option value="Main Course">Main Course</option>
               <option value="Desserts">Desserts</option>
-              {/* Add more categories as needed */}
+              
             </select>
           </div>
 

@@ -1,16 +1,16 @@
-/* Container for the food list */
+
 .food-list {
   margin: 20px auto;
   padding: 20px;
-  max-width: 1200px; /* Adjust based on your layout needs */
+  max-width: 1200px; 
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between cards */
+  gap: 20px;
 }
 
-/* Card styling */
+
 .food-item {
-  width: calc(33.333% - 20px); /* Three cards per row with gap adjustment */
+  width: calc(33.333% - 20px); 
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -25,7 +25,7 @@
 
 .food-item img {
   width: 100%;
-  max-width: 150px; /* Adjust as needed */
+  max-width: 150px; 
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
@@ -56,16 +56,16 @@
   background-color: #0056b3;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .food-item {
-    width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    width: calc(50% - 20px); 
   }
 }
 
 @media (max-width: 480px) {
   .food-item {
-    width: 100%; /* Single card per row on very small screens */
+    width: 100%; 
   }
 }
 
@@ -74,7 +74,7 @@
 
 .edit-food {
   width: 100%;
-  max-width: 800px; /* Adjust this width as needed */
+  max-width: 800px; 
   margin: 2rem auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -132,13 +132,13 @@
   background-color: #218838;
 }
 
-/* Additional Styles for Error Handling and Notifications */
+
 
 .toast-container {
   z-index: 1050;
 }
 
-/* Responsive adjustments */
+
 
 @media (max-width: 600px) {
   .edit-food .form-group {
