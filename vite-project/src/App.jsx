@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import Sidebar from './components/sidebar/sidebar';
-import Navbar from './components/navbar/navbar';
+import Sidebar from './components/Sidebar/sidebar';
+import Navbar from './components/Navbar/navbar';
 
 import FoodAdd from './pages/add/foodAdd';
 import RestaurantAdd from './pages/add/restaurantAdd';
-
+import Login from './pages/login/login.jsx';
 import EditRestaurant from './pages/edit/editRestaurant.jsx'; 
 import FoodEdit from './pages/edit/editFood.jsx';
 import { ToastContainer } from 'react-toastify';
@@ -20,6 +20,7 @@ const App = () => {
       <div className='app-content'>
         <Sidebar />
         <Routes>
+          <Route path="/login" element={<Login />} />
           <Route path="/add-food" element={<FoodAdd />} />
           <Route path="/add-restaurant" element={<RestaurantAdd />} />
           

@@ -12,7 +12,12 @@
 }
 
 .profile{
-    width: 5%;
+    width: 30%;
+}
+
+.login-link{
+    text-decoration: none;
+    color: black;
 }
 
 

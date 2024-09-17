@@ -1,48 +1,53 @@
-
-
 .edit-container {
-    padding: 20px;
-    background-color: #f9f9f9;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
-  
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  li img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 15px;
-  }
-  
-  li h2 {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #333;
-  }
-  
-  li p {
-    margin: 5px 0;
-    color: #666;
-  }
-  
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap to the next row */
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+   /* Center the cards */
+}
+
+li {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards in a row with space between */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text inside the card */
+}
+
+li img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+li h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+}
+
+li p {
+  margin: 5px 0;
+  color: #666;
+}
