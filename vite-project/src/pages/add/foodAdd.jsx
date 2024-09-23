@@ -21,7 +21,7 @@ const FoodAdd = () => {
   useEffect(() => {
     const fetchRestaurants = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/restaurant");
+        const response = await axios.get("https://food-del-backend-8w54.onrender.com/restaurant");
         setRestaurants(Array.isArray(response.data.data) ? response.data.data : []);
       } catch (error) {
         console.error("Error fetching restaurants:", error);
@@ -69,7 +69,7 @@ const FoodAdd = () => {
     formData.append("rating", data.rating);
 
     try {
-      const response = await axios.post("http://localhost:3000/food", formData);
+      const response = await axios.post("https://food-del-backend-8w54.onrender.com/food", formData);
 
       setData({
         name: "",

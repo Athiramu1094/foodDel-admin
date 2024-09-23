@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 const RestaurantList = ({ restaurants, onEditClick }) => {
   const navigate = useNavigate();
-  const restaurantUrl = "http://localhost:3000/restaurant";
+  const restaurantUrl = "https://food-del-backend-8w54.onrender.com/restaurant";
 
   const handleDelete = async (id) => {
     try {

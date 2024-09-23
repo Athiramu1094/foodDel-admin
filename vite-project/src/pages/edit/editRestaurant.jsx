@@ -16,7 +16,7 @@ const EditRestaurant = () => {
     cuisine: "",
     rating: "",
   });
-  const restaurantUrl = "http://localhost:3000/restaurant";
+  const restaurantUrl = "https://food-del-backend-8w54.onrender.com/restaurant";
   const navigate = useNavigate();
   const { id } = useParams();
 

@@ -4,7 +4,7 @@ import "./add.css";
 import { toast } from "react-toastify";
 
 const RestaurantAdd = () => {
-  const restaurantUrl = "http://localhost:3000/restaurant"; // API endpoint for restaurants
+  const restaurantUrl = "https://food-del-backend-8w54.onrender.com/restaurant"; // API endpoint for restaurants
   const [restaurantImage, setRestaurantImage] = useState(null);
   const [imageFile, setImageFile] = useState(null);
   const [data, setData] = useState({

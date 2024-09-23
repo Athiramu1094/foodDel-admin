@@ -8,7 +8,7 @@ const FoodList = () => {
   const [foods, setFoods] = useState([]);
   const [restaurants, setRestaurants] = useState({});
   const navigate = useNavigate();
-  const foodUrl = "http://localhost:3000/food"; // API URL for food items
+  const foodUrl = "https://food-del-backend-8w54.onrender.com/food";// API URL for food items
 
   useEffect(() => {
     const fetchAllData = async () => {
@@ -18,7 +18,7 @@ const FoodList = () => {
         setFoods(foodResponse.data.data); // Set the list of food items
 
         // Fetch restaurants
-        const restaurantResponse = await axios.get("http://localhost:3000/restaurant");
+        const restaurantResponse = await axios.get("https://food-del-backend-8w54.onrender.com/restaurant");
         const restaurantData = restaurantResponse.data.data;
 
         // Map restaurant data by ID

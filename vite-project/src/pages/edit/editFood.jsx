@@ -29,7 +29,7 @@ const FoodEdit = () => {
     const fetchFoodItem = async () => {
       try {
         if (id) {
-          const response = await axios.get(`http://localhost:3000/food/${id}`);
+          const response = await axios.get(`https://food-del-backend-8w54.onrender.com/food/${id}`);
           setFoodItem(response.data.data);
           setData(response.data.data);
           setMainImagePreview(response.data.data.mainImage);
@@ -42,7 +42,7 @@ const FoodEdit = () => {
 
     const fetchAllFoods = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/food");
+        const response = await axios.get("https://food-del-backend-8w54.onrender.com/food");
         setFoods(response.data.data);
       } catch (error) {
         console.error("Error fetching food items:", error);
@@ -51,7 +51,7 @@ const FoodEdit = () => {
 
     const fetchRestaurants = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/restaurant");
+        const response = await axios.get("https://food-del-backend-8w54.onrender.com/restaurant");
         setRestaurants(Array.isArray(response.data.data) ? response.data.data : []);
       } catch (error) {
         console.error("Error fetching restaurants:", error);
@@ -102,7 +102,7 @@ const FoodEdit = () => {
     formData.append("rating", data.rating);
 
     try {
-      const response = await axios.put(`http://localhost:3000/food/${id}`, formData, {
+      const response = await axios.put(`https://food-del-backend-8w54.onrender.com/food/${id}`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       toast.success(response.data.message);
